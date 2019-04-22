@@ -74,7 +74,7 @@ int main()
     tN= tn*tm;
     ce1();
     ce2();
-    cout << "\nPOSSIBLE VALUES OF e2 ARE\n";
+    cout << "\nPOSSIBLE VALUES OF e1 ARE\n";
     for (i = 0; i < j - 1; i++)
         cout << e1[i] << "\n";
     cout << "\nPOSSIBLE VALUES OF e2 ARE\n";
@@ -197,7 +197,7 @@ long int cd3(long int x)
 
 void encrypt()
 {
-    long int pt, ct, key = e[0], k, len;
+    long int pt, ct, key = E[0], k, len;
     i = 0;
     len = strlen(msg);
     while (i != len)
@@ -241,4 +241,5 @@ void decrypt()
     cout << "\nTHE DECRYPTED MESSAGE IS\n";
     for (i = 0; M[i] != -1; i++)
         printf("%c", M[i]);
+    cout<<"\n";    
 }
